@@ -16,7 +16,6 @@ If you like what I do here, please help spread the work! It's free, and it is me
 1. [Tutorial 1](./L1/L1.md)
 2. Tutorial 2
 3. Tutorial 3
-lo
 
 #### **Support** 
 
