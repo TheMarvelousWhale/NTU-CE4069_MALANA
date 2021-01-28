@@ -1,2 +1,0 @@
-Hello there kenobi
-![alt text](./Assets/Llama.jpg "The llama")
