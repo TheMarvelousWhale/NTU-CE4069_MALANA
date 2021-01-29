@@ -2,7 +2,7 @@
 
 _Site currently maintained by Sosig Catto (pronounced: '[sɒsɪʤz](https://www.google.com/search?client=firefox-b-d&q=sausage+ipa+pronunciation)')_
 
-This page is where I maintain a comprehensive and often in-depth answers to the tutorials of NTU CE4069 Malware Analysis. Any errata found please kidnly submit a code review (I'm open to pull requests if you want to contribute!). 
+This page is where I maintain a comprehensive and often in-depth answers to the tutorials of NTU CE4069 Malware Analysis. Any errata found please kindly submit a code review (I'm open to pull requests if you want to contribute!). 
 
 I do this an effort to help my friends understand the materials and often the tools in RE better. For those who wish to learn more than lecture, I tried my best to provide an in-depth section where I dissect the IDA call graph in details. 
 
