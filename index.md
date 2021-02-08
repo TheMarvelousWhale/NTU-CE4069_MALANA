@@ -12,7 +12,7 @@ If you like what I do here, please help spread the work! It's free, and it is me
 
 ![Cat Lick](./catlick.gif)
 ## **Tutorial folders**
-
+0. [Setup Instruction](./install.md)
 1. [Tutorial 1](./L1/L1.md)
 2. [Tutorial 2](./L2/L2.md)
 3. Tutorial 3
