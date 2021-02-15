@@ -26,6 +26,7 @@ So therefore if you want to restart, I would recommend the following:
 5. Save this as golden snapshot. Then drag your malware in and unzip :D 
 
 
+
 Any questions just leave me a git issues on the repo of this page. 
 
 Adios :> 
