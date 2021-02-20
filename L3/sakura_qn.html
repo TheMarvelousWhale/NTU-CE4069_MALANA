@@ -10,7 +10,13 @@
 <script>
 function displayDate() {
     var pwd = prompt("Please enter sosig password","");
-  document.getElementById("demo").innerHTML = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");
+    var res = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");
+    if (res.startsWith("the_answer_to_asg_1_is_in")) {
+        document.getElementById("demo").innerHTML = res;
+    }
+    else {
+        document.getElementById("demo").innerHTML = "You answered wrongly. Try again."
+    }
   console.log(document.getElementById("pwd").innerHTML);
 }
 
@@ -45,7 +51,7 @@ function displayDate() {
     <p >Well well well who is here? A young traveller... A desperate one I see... You seem to be eyeing on the answer to the Millenia puzzle...?</p>
     <p>Are you worthy enough?</p>
     <p id="demo">The answer is hidden and is waiting for you, but First! You must answer a question. Sosig Catto doesn't want to let just anyone in!</p>
-    <button type="button" onclick="displayDate()">Answer a question</button>
+    <button type="button" onclick="displayDate()">Answer The Question</button>
     
 </body>
 </html> 
