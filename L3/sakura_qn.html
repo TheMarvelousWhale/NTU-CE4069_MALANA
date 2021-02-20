@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+
+<html>
+<head>
+<script>
+function displayDate() {
+    var pwd = prompt("Please enter sosig password","");
+  document.getElementById("demo").innerHTML = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");
+  console.log(document.getElementById("pwd").innerHTML);
+}
+
+  function rc4(key, str) {
+	var s = [], j = 0, x, res = '';
+	for (var i = 0; i < 256; i++) {
+		s[i] = i;
+	}
+	for (i = 0; i < 256; i++) {
+		j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
+		x = s[i];
+		s[i] = s[j];
+		s[j] = x;
+	}
+	i = 0;
+	j = 0;
+	for (var y = 0; y < str.length; y++) {
+		i = (i + 1) % 256;
+		j = (j + s[i]) % 256;
+		x = s[i];
+		s[i] = s[j];
+		s[j] = x;
+		res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
+	}
+	return res;
+}
+
+</script>
+</head>
+<body>
+    <h2>Protected Land</h2>
+    <p >Well well well who is here? A young traveller... A desperate one I see... You seem to be eyeing on the answer to the Millenia puzzle...?</p>
+    <p>Are you worthy enough?</p>
+    <p id="demo">The answer is hidden and is waiting for you, but First! You must answer a question. Sosig Catto doesn't want to let just anyone in!</p>
+    <button type="button" onclick="displayDate()">Answer a question</button>
+    
+</body>
+</html> 
