@@ -52,7 +52,6 @@ function displayAnswer() {
     var pwd = prompt("Please enter sosig password","");
     var res = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");   /**You can try un-rc4 this**/
     if (res.startsWith("the_answer_to_asg_1_is_in")) {                     /**blue balling**/
-        document.getElementById("demo").innerHTML = res;
 		    document.getElementById("submit").style.display = "none";
         document.getElementById("what").href = rc4(pwd,"wÝl%;ýâº[à");
         document.getElementById("what").style.display="block";
