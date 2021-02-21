@@ -8,6 +8,10 @@
 p {
   font-size: 1.1rem;
 }
+
+li{
+    font-size:1.1rem;
+}
 .landing-main {
   display: flex;
   align-items: center;
@@ -41,9 +45,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-#what {
-  display:none;
 }
 </style>
 
@@ -97,7 +98,7 @@ function displayAnswer() {
                 <div class="General">
                     <p>Below is some pointers for each section of the assignment:</p>
                     <ol>
-                        <li>Identify the malware family is most important as it guide the overall Googling effort.</li>    
+                        <li>Identify the malware family is the most important step as it guides the overall Googling effort.</li>    
                         <li>During static analysis, match the imports/functions to the objectives of the malware, 
                             in order to gain an overview of how the malware does what it was designed to do. 
                             You can use any tools you like but for unpacked samples like this, I like to use IDA (LOL). 
@@ -116,9 +117,36 @@ function displayAnswer() {
                         </li>            
                     </ol>
                 </div>
+                <div class="Tips">
+                    <p>I have a few tips if you are stuck on certain sections as below:</p>
+                    <ul>
+                        <li>Setup: use a win7 or the ova the prof have given. Fakenet and other tools work well there.
+                            Most importantly for this assignment, the behaviours of the malware are consistent and full in win7, with %DEFAULTBROWSER%=iexplore.exe
+                        </li>
+                        <li>Identify the malware family: read the sandbox results given carefully. If the family is not given, there are certain Capitalized words
+                            that should tell you which family it belongs to, and its name.
+                        </li>
+                        <li>
+                            Static analysis: not really impt in this assignment imo. Although I do use some imports and strings result. 
+                        </li>
+                        <li>
+                            Dynamic analysis: fakenet run on win7, regshot is useful, procmon+ipynb with the right filter can answer most of the questions.
+                        </li>
+                        <li>
+                            Even when you cant analyze hooking/injection, there are telltales sign in procmon like "Process Create" that tells us something
+                            fishy is going on.
+                        </li>
+                        <li>
+                            Functionalities/Special Behaviours: Google hard and detonate the malware. Analyze what you see and repeat with finer instrumentations. 
+                        </li>
+                    
+                    </ul>
+                    <p>Trust me, all of the answers you are looking for can be Googled for. And only one of it is on the second page.</p>
+                </div>
                 <div class="DLC">
                     <p>And.... then there's the configuration files</p>
                     <p>These files are harder to spot with any basic analysis and often require more heavy-handed tools that speak to those who can listen to them</p>
+                    <p>But again there is a reason for them to carry so much marks because it has all the important parameters.</p>
                     <button id="entry" onClick="displayAnswer()">As usual to get to know how to do this, you must first answer a question!</button>
                     <p id="encryptedA">Sample A butchering tools</p>
                     <p id="encryptedB">Sample B butchering tools</p>
