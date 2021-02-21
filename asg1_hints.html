@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+<style>
+/**Style some stuff, using the age old html structure**/
+p {
+  font-size: 1.1rem;
+}
+
+li{
+    font-size:1.1rem;
+}
+.landing-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:100%;
+  padding: 2rem 2rem;
+  background-image: url("./L3/Assets/he.jpg");
+}
+.text-box {
+  padding:4rem 4rem;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.landing-section-content {
+  box-shadow: 0 0 0 4px #fff;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items:center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.600)), url("./L3/Assets/he_real.jpg");
+
+  /* Set a specific height */
+  width:80vw;
+  min-height:30vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+
+<script>			/**Where all things took place**/
+function displayAnswer() {
+    var pwd = prompt("The most important onomatopoeia","");
+    var encrypted_B = "ßqÍd.RÅ<ÃMA9d¥vø;C¦£PºíµTÀ:öSæ±¦H]¶mìù-=ÖeÌO~»3 â";
+    var encrypted_A = "ÜqÁbEÙ?ðpv»;[F÷za>þ6¶¸²î·¼WðÃê¸Qâ»¦eFQËö<G<3Æ_ßD"
+    var res = rc4(pwd,"Ä$+÷~eÄÛG");
+    if (res.startsWith("You_need_to")) {                     /**blue balling**/
+        document.getElementById("encryptedA").innerHTML=rc4(pwd,encrypted_A);
+        document.getElementById("encryptedB").innerHTML=rc4(pwd,encrypted_B);
+        document.getElementById("entry").style.display="none"
+    }
+    else {
+        document.getElementById("entry").innerHTML = "You answered wrongly. Try again."
+    }
+  
+}
+
+  function rc4(key, str) {													/**Implementation of RC4 256- taken online**/
+	var s = [], j = 0, x, res = '';
+	for (var i = 0; i < 256; i++) {
+		s[i] = i;
+	}
+	for (i = 0; i < 256; i++) {
+		j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
+		x = s[i];
+		s[i] = s[j];
+		s[j] = x;
+	}
+	i = 0;
+	j = 0;
+	for (var y = 0; y < str.length; y++) {
+		i = (i + 1) % 256;
+		j = (j + s[i]) % 256;
+		x = s[i];
+		s[i] = s[j];
+		s[j] = x;
+		res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
+	}
+	return res;
+}
+
+</script>
+</head>
+<body class="landing-main">  			
+		<div class="landing-section-content">
+			<div class="text-box">
+				<h2>Some general guideline for Assignment 1</h2>
+                <div class="General">
+                    <p>Below is some pointers for each section of the assignment:</p>
+                    <ol>
+                        <li>Identify the malware family is the most important step as it guides the overall Googling effort.</li>    
+                        <li>During static analysis, match the imports/functions to the objectives of the malware, 
+                            in order to gain an overview of how the malware does what it was designed to do. 
+                            You can use any tools you like but for unpacked samples like this, I like to use IDA (LOL). 
+                            Also run the malware through strings tool to see if there is anything interesting. But again for this part do not dwell on the details. 
+                            Spend 10-15 minutes on it should be more than enough.
+                        </li>
+                        <li>Immediately conduct basic dynamic analysis to identify:
+                            any network calls (network indicator);
+                            any files changed, registry changed, code injection method (host-based indicator). 
+                            For this I like to use procmon and ipynb (yall will know if yall follow my blogs), fakenet and occasionally regshot. 
+                        </li>
+                        <li>
+                            During dynamic analysis, you should be able to notice any special behaviours the sample exhibit -- delete itself, display any alert, etc
+                            Although it might mean the malware can detect VM, these are better checked against tools like Ollydbg (aka advanced dynamic analysis).
+                            Nonetheless all the behaviours should be obvious in plain sight and/or procmon.
+                        </li>            
+                    </ol>
+                </div>
+                <div class="Tips">
+                    <p>I have a few tips if you are stuck on certain sections as below:</p>
+                    <ul>
+                        <li>Setup: use a win7 or the ova the prof have given. Fakenet and other tools work well there.
+                            Most importantly for this assignment, the behaviours of the malware are consistent and full in win7, with %DEFAULTBROWSER%=iexplore.exe
+                        </li>
+                        <li>Identify the malware family: read the sandbox results given carefully. If the family is not given, there are certain Capitalized words
+                            that should tell you which family it belongs to, and its name.
+                        </li>
+                        <li>
+                            Static analysis: not really impt in this assignment imo. Although I do use some imports and strings result. 
+                        </li>
+                        <li>
+                            Dynamic analysis: fakenet run on win7, regshot is useful, procmon+ipynb with the right filter can answer most of the questions.
+                        </li>
+                        <li>
+                            Even when you cant analyze hooking/injection, there are telltales sign in procmon like "Process Create" that tells us something
+                            fishy is going on.
+                        </li>
+                        <li>
+                            Functionalities/Special Behaviours: Google hard and detonate the malware. Analyze what you see and repeat with finer instrumentations. 
+                        </li>
+                    
+                    </ul>
+                    <p>Trust me, all of the answers you are looking for can be Googled for. And only one of it is on the second page.</p>
+                </div>
+                <div class="DLC">
+                    <p>And.... then there's the configuration files</p>
+                    <p>These files are harder to spot with any basic analysis and often require more heavy-handed tools that speak to those who can listen to them</p>
+                    <p>But again there is a reason for them to carry so much marks because it has all the important parameters.</p>
+                    <button id="entry" onClick="displayAnswer()">As usual to get to know how to do this, you must first answer a question!</button>
+                    <p id="encryptedA">Sample A butchering tools</p>
+                    <p id="encryptedB">Sample B butchering tools</p>
+                    <p>With these tools, if you can wield them adequately they will show you the entirety of the structure of the samples given</p>
+                </div>
+                <div class="Conclusion">
+                    <p>And that's all from me! Any other questions you can drop me a github issue! All the best ヽ(・∀・)ﾉ</p>
+                </div>
+                
+			</div>
+		</div>
+</body>
+</html> 
