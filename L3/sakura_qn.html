@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
-
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
-
-
 <html>
 <head>
 <style>
-
+/**Style some stuff, using the age old html structure**/
+p {
+  font-size: 1.1rem;
+}
 .landing-main {
   display: flex;
   align-items: center;
@@ -23,13 +22,7 @@
   text-align: center;
   position: relative;
   color: white;
-
 }
-
-p {
-  font-size: 1.1rem;
-}
-
 .landing-section-content {
   box-shadow: 0 0 0 4px #fff;
   box-sizing: border-box;
@@ -49,16 +42,20 @@ p {
   background-size: cover;
   position: relative;
 }
+#what {
+  display:none;
+}
 </style>
 
-
-<script>
-function displayDate() {
+<script>			/**Where all things took place**/
+function displayAnswer() {
     var pwd = prompt("Please enter sosig password","");
-    var res = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");
-    if (res.startsWith("the_answer_to_asg_1_is_in")) {
+    var res = rc4(pwd,"-Æ#eg*	­;á½QÓ^d>gÿí9^Û¹á,ï°[íö.æ³P%");   /**You can try un-rc4 this**/
+    if (res.startsWith("the_answer_to_asg_1_is_in")) {                     /**blue balling**/
         document.getElementById("demo").innerHTML = res;
-		document.getElementById("submit").innerHTML = "Congratulations!"
+		    document.getElementById("submit").style.display = "none";
+        document.getElementById("what").href = rc4(pwd,"wÝl%;ýâº[à");
+        document.getElementById("what").style.display="block";
     }
     else {
         document.getElementById("demo").innerHTML = "You answered wrongly. Try again."
@@ -66,7 +63,7 @@ function displayDate() {
   console.log(document.getElementById("pwd").innerHTML);
 }
 
-  function rc4(key, str) {
+  function rc4(key, str) {													/**Implementation of RC4 256- taken online**/
 	var s = [], j = 0, x, res = '';
 	for (var i = 0; i < 256; i++) {
 		s[i] = i;
@@ -92,14 +89,15 @@ function displayDate() {
 
 </script>
 </head>
-<body class="landing-main">
+<body class="landing-main">  			
 		<div class="landing-section-content">
 			<div class="text-box">
 				<h2>Protected Land</h2>
 				<p >Well well well who is here? </br>A young traveller... A desperate one I see... You seem to be eyeing on the answer to the Millenia puzzle...?</p>
 				<p>Are you worthy enough?</p>
 				<p id="demo">The answer is hidden and is waiting for you, but First!</br> You must answer a question. Sosig Catto doesn't want to let just anyone in!</p>
-				<button type="button" onclick="displayDate()" id="submit">Answer The Question</button>
+        <a id="what" href="">Click here</a>
+				<button type="button" onclick="displayAnswer()" id="submit">Answer The Question</button>
 			</div>
 		</div>
 </body>
