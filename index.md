@@ -16,7 +16,7 @@ If you like what I do here, please help spread the work! It's free, and it is me
 1. [Tutorial 1](./L1/L1.md)
 2. [Tutorial 2](./L2/L2.md)
 3. [Tutorial 3](./L3/L3.md)
-4. [Assignment 1](./L3/sakura_qn.html)
+4. [Assignment 1 Hints](./L3/sakura_qn.html)
 
 #### **Support** 
 
