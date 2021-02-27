@@ -2,7 +2,12 @@
 
 _Site currently maintained by Sosig Catto (pronounced: '[sɒsɪʤz](https://www.google.com/search?client=firefox-b-d&q=sausage+ipa+pronunciation)')_
 
-This page is where I maintain a comprehensive and often in-depth answers to the tutorials of NTU CE4069 Malware Analysis. Any errata found please kindly submit a code review (I'm open to pull requests if you want to contribute!). 
+This page is where I maintain a comprehensive and often in-depth answers to the tutorials of NTU CE4069 Malware Analysis. Any errata found please kindly submit a code **review** (I'm open to pull requests if you want to contribute!). 
+
+**Disclaimer:**
+1) Sosig is in no way affiliated with any of the teaching staff of CX4069; content here are solely based on Sosig's understanding and does not represent the definite answers. 
+2) Sosig is open for errata correction via github issues. However, Sosig will not be entertaining any tutoring/mentoring/doubt-clarification requests.
+3) Use content at your own discretion.
 
 I do this an effort to help my friends understand the materials and often the tools in RE better. For those who wish to learn more than lecture, I tried my best to provide an in-depth section where I dissect the IDA call graph in details. 
 
@@ -17,6 +22,10 @@ If you like what I do here, please help spread the work! It's free, and it is me
 2. [Tutorial 2](./L2/L2.md)
 3. [Tutorial 3](./L3/L3.md)
 4. [Assignment 1 Hints](./L3/sakura_qn.html)
+5. [Assignment 1 Report](./A1/A1.md)
+6. [Tutorial 4](./L4/L4.md)
+7. [Tutorial 5](./L5/L5.md)
+8. [Tutorial 6](./L6/L6.md)
 
 #### **Support** 
 
