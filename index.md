@@ -17,7 +17,12 @@ Do understand that I am also a student and a contracted staff for a **\*_cough_\
 
 If you like what I do here, please help spread the work! It's free, and it is meant to benefit everyone. 
 
+_ALSO, THERE WILL BE A LOT OF **LOOΠΔ** REFERENCES. LIKE....ALOT._
+
 ![Cat Lick](./catlick.gif)
+
+Deal with it. 
+
 ## **Tutorial folders**
 0. [Setup Instruction](./L0/install.md)
 1. [Tutorial 1](./L1/L1.md)
