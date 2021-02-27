@@ -9,6 +9,8 @@ This page is where I maintain a comprehensive and often in-depth answers to the 
 2) Sosig is open for errata correction via github issues. However, Sosig will not be entertaining any tutoring/mentoring/doubt-clarification requests.
 3) Use content at your own discretion.
 
+_Many thanks to enginur @NekiYong for the addition_
+
 I do this an effort to help my friends understand the materials and often the tools in RE better. For those who wish to learn more than lecture, I tried my best to provide an in-depth section where I dissect the IDA call graph in details. 
 
 Do understand that I am also a student and a contracted staff for a **\*_cough_\*** agency in One-North, so I will be slow in updating the content. Patience is deeply appreciated. Also, I will only upload the solution after the tutorial (so yall should come for tutorial). 
