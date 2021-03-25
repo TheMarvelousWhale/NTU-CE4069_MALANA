@@ -38,5 +38,9 @@ def encode(target,charset):
     return result
         
 
-if __name__ == "__main__":
-    print(decode(s,charset))
+target = "1c3e2c330c383636383923181d0a3730383d323f333679392e3f"
+
+for i in range(0,len(target),2):
+    print(chr((int(target[i:i+2],16)^int("41",16))-int("0A",16)),end='')
+    #print(target[i:i+2],chr((int(target[i:i+2],16)^int("41",16))-10))
+    

@@ -33,6 +33,8 @@ Deal with it.
 6. [Tutorial 4](./L4/L4.md)
 7. [Tutorial 5](./L5/L5.md)
 8. [Tutorial 6](./L6/L6.md)
+9. [Tutorial 7](./L7/L7.md)
+10. [Tutorial 8](./L8/L8.md)
 
 #### **Support** 
 
