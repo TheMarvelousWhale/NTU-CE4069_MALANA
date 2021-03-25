@@ -24,17 +24,17 @@ _ALSO, THERE WILL BE A LOT OF **LOOΠΔ** REFERENCES. LIKE....ALOT._
 Deal with it. 
 
 ## **Tutorial folders**
-0. [Setup Instruction](./L0/install.md)
-1. [Tutorial 1](./L1/L1.md)
-2. [Tutorial 2](./L2/L2.md)
-3. [Tutorial 3](./L3/L3.md)
-4. [Assignment 1 Hints](./L3/sakura_qn.html)
-5. [Assignment 1 Report](./A1/A1.md)
-6. [Tutorial 4](./L4/L4.md)
-7. [Tutorial 5](./L5/L5.md)
-8. [Tutorial 6](./L6/L6.md)
-9. [Tutorial 7](./L7/L7.md)
-10. [Tutorial 8](./L8/L8.md)
+0. [Setup Instruction](./L0/install.md) -- A JoHaseul Intro
+1. [Tutorial 1](./L1/L1.md) -- Chuu
+2. [Tutorial 2](./L2/L2.md) -- Heejin
+3. [Tutorial 3](./L3/L3.md) -- Olivia Hye
+4. [Assignment 1 Hints](./L3/sakura_qn.html) 
+5. [Assignment 1 Report](./A1/A1.md) -- Sakura
+6. [Tutorial 4](./L4/L4.md) -- Vivi
+7. [Tutorial 5](./L5/L5.md) -- Yves
+8. [Tutorial 6](./L6/L6.md) -- Jinsoul
+9. [Tutorial 7](./L7/L7.md) -- Choerry
+10. [Tutorial 8](./L8/L8.md) -- Kim Lip 
 
 #### **Support** 
 
