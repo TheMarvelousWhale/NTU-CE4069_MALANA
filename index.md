@@ -35,6 +35,9 @@ Deal with it.
 8. [Tutorial 6](./L6/L6.md) -- Jinsoul
 9. [Tutorial 7](./L7/L7.md) -- Choerry
 10. [Tutorial 8](./L8/L8.md) -- Kim Lip 
+11. [Assignment 2](./A2/A2.md) -- ?? not deadline yet
+12. [Tutorial 9](./L9/L9.md) -- Gowon
+13. [Tutorial 10](./L10/L10.md) -- Yeojin
 
 #### **Support** 
 

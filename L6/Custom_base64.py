@@ -8,10 +8,11 @@ Created on Sat Feb 27 14:21:11 2021
 s = 'xDuebTK0Wjirx2ihWRKCN1l0JAV5NDSeaDirW21eyEaexjRrV29q'
 
 charset = "ZYXABCDEFGHIJKLMNOPQRSTUVWzyxabcdefghijklmnopqrstuvw0123456789+/"
-
+newchar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/"
 def decode(target,charset):
     bitstream = ""
     for c in target:
+        #print(c)
         i = charset.index(c)       #get the ordinal
         b = format(i,'06b')        #get the binary, size of 6 bit 
         bitstream += b             #since format return a string, append it to result
@@ -37,10 +38,21 @@ def encode(target,charset):
         result += charset[k]
     return result
         
+def decrypt(stra):
+    encrypt_key = 'malwareanalyst'
+    key = ""
+    print(stra)
+    for i, b in enumerate(stra):
+        index = ord(b) - ord(encrypt_key[i % len(encrypt_key)])
+        if index > 0:
+            key = key + chr(index)
+        else:
+            pass
+        #print(key)
+    return key
 
-target = "1c3e2c330c383636383923181d0a3730383d323f333679392e3f"
+target = "1DxG59sSLjdEWT/T2nBwZ5RA0n+uYRM3RU+727O"
 
-for i in range(0,len(target),2):
-    print(chr((int(target[i:i+2],16)^int("41",16))-int("0A",16)),end='')
+print(decrypt(decode(target,newchar)))
     #print(target[i:i+2],chr((int(target[i:i+2],16)^int("41",16))-10))
     
