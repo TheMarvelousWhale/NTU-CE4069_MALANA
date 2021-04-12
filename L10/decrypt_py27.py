@@ -29,7 +29,7 @@ unpad = lambda s: s[0:ord(s[-1])]
 fname = "Urgent.doc"
 with open(fname, 'rb+') as f:
     encrypted_data = f.read()
-    key = "thosefilesreallytiedthefoldertogether".encode('utf-8')
+    key = "thosefilesreallytiedthefoldertogether"
     # 256-bit key / 8 = 32 bytes
     aes_key = derive_key(key)[:32]
     
