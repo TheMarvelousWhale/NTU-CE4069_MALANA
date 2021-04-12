@@ -23,22 +23,24 @@ _ALSO, THERE WILL BE A LOT OF **LOOΠΔ** REFERENCES. LIKE....ALOT._
 
 Deal with it. 
 
-## **Tutorial folders**
+## **Tutorial folder**
 0. [Setup Instruction](./L0/install.md) -- A JoHaseul Intro
 1. [Tutorial 1](./L1/L1.md) -- Chuu
 2. [Tutorial 2](./L2/L2.md) -- Heejin
 3. [Tutorial 3](./L3/L3.md) -- Olivia Hye
-4. [Assignment 1 Hints](./L3/sakura_qn.html) 
-5. [Assignment 1 Report](./A1/A1.md) 
-6. [Tutorial 4](./L4/L4.md) -- Vivi
-7. [Tutorial 5](./L5/L5.md) -- Yves
-8. [Tutorial 6](./L6/L6.md) -- Jinsoul
-9. [Tutorial 7](./L7/L7.md) -- Choerry
-10. [Tutorial 8](./L8/L8.md) -- Kim Lip 
-11. [Assignment 2](./A2/Assets/chaeng.gif) 
-12. [Tutorial 9](./L9/L9.md) -- Gowon
-13. [Tutorial 10](./L10/L10.md) -- Yeojin
-14. [Tutorial 11 -- Recap](./L11/L11.md) -- Hyunjin
+4. [Tutorial 4](./L4/L4.md) -- Vivi
+5. [Tutorial 5](./L5/L5.md) -- Yves
+6. [Tutorial 6](./L6/L6.md) -- Jinsoul
+7. [Tutorial 7](./L7/L7.md) -- Choerry
+8. [Tutorial 8](./L8/L8.md) -- Kim Lip 
+9. [Tutorial 9](./L9/L9.md) -- Gowon
+10. [Tutorial 10](./L10/L10.md) -- Yeojin
+11. [Tutorial 11 -- Recap](./L11/L11.md) -- Hyunjin
+
+## **Assignment folder**
+1. [Assignment 1 Hints](./L3/sakura_qn.html) 
+2. [Assignment 1 Report](./A1/A1.md) 
+3. [Assignment 2](./A2/A2.md) 
 
 #### **Support** 
 
