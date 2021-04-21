@@ -42,6 +42,8 @@ Deal with it.
 2. [Assignment 1 Report](./A1/A1.md) 
 3. [Assignment 2](./A2/A2.md) 
 
+## **Potpourri**
+1. [Details of Injection](./Misc/injection.md)
 #### **Support** 
 
 I do this free of charge, and I do appreciate a cup of coffee
